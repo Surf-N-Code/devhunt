@@ -38,3 +38,7 @@ next-env.d.ts
 prisma/.env
 prisma/.env.development
 src/__generated__/
+
+# IDE
+.idea
+.vscode
