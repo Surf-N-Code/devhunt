@@ -4,7 +4,20 @@
     "es2021": true
   },
   "extends": "standard-with-typescript",
-  "overrides": [],
+  "overrides": [
+    {
+      "files": [",**/*.(spec|test).{j,t}s?(x)"],
+      "rules": {
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+      },
+    }
+  ],
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaVersion": "latest",
